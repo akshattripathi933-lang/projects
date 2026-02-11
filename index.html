@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+</head>
+<body>
+
+  <U>  <h1 align="center">Registration Form</h2> </U>
+<center>
+    <form action="/submit" method="post">
+
+        <!-- Text Input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+
+	<input type="radio" id="Other" name="gender" value="others">
+        <label for="other">Others</label><br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            	<option value="">Select a country</option>
+		<option value="usa">United States</option>
+		<option value="India">India</option>
+		<option value="canada">Canada</option>
+		<option value="uk">United Kingdom</option>
+		<option value="australia">Australia</option>
+		<option value="other">Other</option>
+
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+    </form></center>
+
+</body>
+</html>
