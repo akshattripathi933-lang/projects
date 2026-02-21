@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Registration Website</title>
+</head>
+
+<body bgcolor="#e6f2ff">
+
+    <!-- Website Header -->
+    <center>
+        <h1><font color="Purple">STAR WEBSITE REGISTRATION</font></h1>
+    </center>
+
+    <!-- Marquee -->
+    <marquee behavior="alternate" bgcolor="lightblue">
+        Welcome to Star Website — Please Fill the Form Carefully!
+    </marquee>
+
+    <br><br>
+
+    <!-- Form Start -->
+    <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            Full Name:
+            <input type="text" name="fullname"
+                   placeholder="Enter your name"
+                   required
+                   pattern="[A-Za-z ]{3,30}">
+            <br><br>
+
+            Email Address:
+            <input type="email" name="email"
+                   placeholder="example@gmail.com"
+                   required>
+            <br><br>
+
+            Password:
+            <input type="password" name="password"
+                   required minlength="6">
+            <br><br>
+
+            Mobile Number:
+            <input type="tel" name="mobile"
+                   pattern="[0-9]{10}"
+                   placeholder="10 digit number"
+                   required>
+            <br><br>
+
+            Date of Birth:
+            <input type="date" name="dob" required>
+        </fieldset>
+
+        <br>
+
+        <!-- Gender Section -->
+        <fieldset>
+            <legend><b>Gender</b></legend>
+
+            <input type="radio" name="gender" required> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </fieldset>
+
+        <br>
+
+        <!-- Course Selection -->
+        <fieldset>
+            <legend><b>Course Selection</b></legend>
+
+            Select Course:
+            <select required>
+                <option value="">--Choose Course--</option>
+                <option>ADCA</option>
+                <option>CCC</option>
+                <option>Tally Prime</option>
+                <option>Web Development</option>
+            </select>
+
+            <br><br>
+
+            Skills:
+            <input type="checkbox"> MS Word
+            <input type="checkbox"> Excel
+            <input type="checkbox"> HTML
+            <input type="checkbox"> Tally
+        </fieldset>
+
+        <br>
+
+        <!-- Address Section -->
+        <fieldset>
+            <legend><b>Address Details</b></legend>
+
+            Address:<br>
+            <textarea rows="4" cols="40" required></textarea>
+            <br><br>
+
+            City:
+            <input type="text" required>
+
+            Pincode:
+            <input type="text" pattern="[0-9]{6}" required>
+        </fieldset>
+
+        <br>
+
+        <!-- Extra HTML5 Inputs -->
+        <fieldset>
+            <legend><b>Additional Information</b></legend>
+
+            Age:
+            <input type="number" min="18" max="60" required>
+            <br><br>
+
+            Favorite Color:
+            <input type="color">
+            <br><br>
+
+            Upload Photo:
+            <input type="file" required>
+        </fieldset>
+
+        <br><br>
+
+        <!-- Buttons -->
+        <center>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear Form">
+        </center>
+
+    </form>
+
+    <br><br>
+
+    <!-- Footer -->
+    <marquee direction="right" bgcolor="lightblue">
+        © 2026 Star Website | HTML5 Form Validation Demo
+    </marquee>
+
+</body>
+</html>
